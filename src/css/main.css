@@ -97,12 +97,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.dropdown {
+    margin: 0 1em;
+}
 
+.b-filter .btn {
+    margin: 0 .5em;
+}
 
+.headline--event {
+    font-size: 1.2em;
+}
 
-
-
-
+.b-event-link {
+    margin: 1em 0;
+}
 
 
 
