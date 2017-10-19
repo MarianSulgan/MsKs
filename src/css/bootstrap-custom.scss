@@ -1,0 +1,130 @@
+@import "bootstrap/bootstrap.scss";
+
+h1 {
+    margin: 1rem 0 3rem 0;
+}
+
+.bg-copper {
+    background-color: $copper;
+}
+
+.navbar-brand-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+nav[role=main] {
+    font-size: 0.9rem;
+}
+
+nav[role=sub] {
+    padding: 2em 0;
+
+    .dropdown-toggle {
+        &:hover, &:active, &[aria-expanded=true] {
+            text-decoration: none;
+            color: $blue;
+        }
+    }
+
+    .dropdown-item {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: $copper;
+        text-align: center;
+    }
+}
+
+.carousel-text {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.b-filter {
+    margin-bottom: 1rem;
+
+    .btn {
+        border: 3px solid;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        min-width: 120px;
+        cursor: pointer;
+
+        &:hover, &:active {
+            border-color: $blue;
+            background-color: $blue;
+        }
+    }
+}
+
+.b-event-link {
+    .headline--event {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        font-weight: bold;
+        margin-top: 1rem;
+        margin-bottom: 0.6rem;
+
+        &:hover {
+            color: $blue;
+            cursor: pointer;
+        }
+    }
+
+    .event-info {
+        color: $copper;
+        font-size: 0.9rem;
+    }
+}
+
+.b-footer-container {
+    background-color: $copper;
+    color: $white;
+    padding: 3rem;
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li > a {
+            color: $white;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.b-logos-container {
+    padding: 3rem;
+    
+    img {
+        max-height: 70px;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.vertical-container {
+    position: relative;
+    min-height: 70px;
+}
+
+.vertical-item {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);    
+}

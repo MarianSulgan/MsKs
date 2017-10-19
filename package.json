@@ -5,7 +5,10 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd ./src && reload -b -p 8000"
+    "start-server": "cd ./src && reload -b -p 8000",
+    "build-css": "node-sass-chokidar src/css/ -o src/css/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/css/ -o src/css/ --watch",
+    "start": "npm-run-all -p watch-css start-server"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,10 @@
   "bugs": {
     "url": "https://github.com/MarianSulgan/MsKs/issues"
   },
-  "homepage": "https://github.com/MarianSulgan/MsKs#readme"
+  "homepage": "https://github.com/MarianSulgan/MsKs#readme",
+  "dependencies": {
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.1",
+    "reload": "^2.2.2"
+  }
 }
