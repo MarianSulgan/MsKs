@@ -3780,7 +3780,11 @@ nav[role=sub] {
 
 .carousel-text {
   font-weight: bold;
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  display: none; }
+
+.carousel-text.active {
+  display: block; }
 
 .b-filter {
   margin-bottom: 1rem; }
