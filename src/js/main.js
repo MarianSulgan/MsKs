@@ -1,7 +1,6 @@
-
 $( document ).ready(function() {
 
-    // External connection of carousel and paragraph (caption)
+    /* External connection of carousel and paragraph (caption) */
 
     $('#carousel-main').on('slide.bs.carousel', function () {
 
@@ -13,4 +12,3 @@ $( document ).ready(function() {
         
     });
 });
-
