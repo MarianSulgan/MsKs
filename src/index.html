@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="sk">
 
 <head>
     <meta charset="utf-8">
@@ -7,11 +7,6 @@
     <title>MsKs Piešťany</title>
     <meta name="description" content="Mestské kultúrne stredisko mesta Piešťany">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/bootstrap-custom.css">
@@ -27,10 +22,14 @@
     <nav role="main" class="navbar navbar-expand-lg navbar-light bg-copper">
 
         <a class="navbar-brand" href="#">
-            <img src="img/logo-msks.png" height="60" width="auto" alt="">
-            <span>/</span>
+            <img src="img/logo-msks.png" height="60" width="auto" alt="Logo MsKs Piešťany">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="60px" xml:space="preserve">
+                <line style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" x1="30.261" y1="1.809" x2="9.739" y2="58.191"/>
+            </svg>
             <span class="navbar-brand-name">Metské kultúrne stredisko mesta Piešťany</span>
+            <div class="navbar-brand-name-sm">Metské kultúrne stredisko mesta Piešťany</div>
         </a>
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -64,7 +63,7 @@
                   <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
                     Malá scéna
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="#">
                         <img src="img/menu-image-msks.jpg" alt="Malá scéna Ivana Krasku" width="150"/>
                     </a>
@@ -78,7 +77,7 @@
                   <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
                     Námestie slobody
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="#">
                         <img src="img/menu-image-msks.jpg" alt="Malá scéna Ivana Krasku" width="150"/>
                     </a>
@@ -92,7 +91,7 @@
                   <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" data-hover="dropdown" aria-haspopup="true" aria-expanded="false">
                     Hudobný pavilón
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <div class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="#">
                         <img src="img/menu-image-msks.jpg" alt="Malá scéna Ivana Krasku" width="150"/>
                     </a>
@@ -109,17 +108,17 @@
         <div class="row">
             <div class="col-xs-12 col-md-3">
                 <p class="carousel-text">
-                    8. 10. 2017 o 17:00
-                    KSC Fontána 
-                    Filmové predstavenie: Blade Runner 2049
+                    8. 10. 2017 o 17:00,
+                    KSC Fontána,
+                    filmové predstavenie: Blade Runner 2049
                 </p>
             </div>
             <div class="col-xs-12 col-md-9">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carousel-main" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-main" data-slide-to="1"></li>
+                    <li data-target="#carousel-main" data-slide-to="2"></li>
                   </ol>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -132,11 +131,11 @@
                       <img class="d-block w-100" src="http://via.placeholder.com/800x400" alt="Third slide">
                     </div>
                   </div>
-                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <a class="carousel-control-prev" href="#carousel-main" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                   </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <a class="carousel-control-next" href="#carousel-main" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                   </a>
@@ -149,7 +148,7 @@
         <div class="row">
             <div class="col">
                 <h1 class="text-center">Podujatia &mdash; Malá scéna</h1>
-                <div class="b-filter d-flex justify-content-center">
+                <div class="b-filter btn-group text-center">
                     <button type="button" class="btn btn-outline-primary">Dnes</button>
                     <button type="button" class="btn btn-outline-primary">Zajtra</button>
                     <button type="button" class="btn btn-outline-primary">Víkend</button>
@@ -158,34 +157,44 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row b-events-container">
             <div class="col-6 col-sm-4 col-lg-3 b-event-link">
-                <img class="d-block w-100" src="img/event-image.png" alt="" />
-                <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                <a href="#">
+                    <img class="d-block w-100" src="img/event-image.png" alt="" />
+                    <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                </a>
                 <div class="event-info">26. 9. &mdash; 15. 10. 2017</div>
                 <div class="event-info">Galéria KSC Fontána</div>
             </div>
             <div class="col-6 col-sm-4 col-lg-3 b-event-link">
-                <img class="d-block w-100" src="img/event-image.png" alt="" />
-                <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                <a href="#">
+                    <img class="d-block w-100" src="img/event-image.png" alt="" />
+                    <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                </a>
                 <div class="event-info">26. 9. &mdash; 15. 10. 2017</div>
                 <div class="event-info">Galéria KSC Fontána</div>
             </div>
             <div class="col-6 col-sm-4 col-lg-3 b-event-link">
-                <img class="d-block w-100" src="img/event-image.png" alt="" />
-                <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                <a href="#">
+                    <img class="d-block w-100" src="img/event-image.png" alt="" />
+                    <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                </a>
                 <div class="event-info">26. 9. &mdash; 15. 10. 2017</div>
                 <div class="event-info">Galéria KSC Fontána</div>
             </div>
             <div class="col-6 col-sm-4 col-lg-3 b-event-link">
-                <img class="d-block w-100" src="img/event-image.png" alt="" />
-                <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                <a href="#">
+                    <img class="d-block w-100" src="img/event-image.png" alt="" />
+                    <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                </a>
                 <div class="event-info">26. 9. &mdash; 15. 10. 2017</div>
                 <div class="event-info">Galéria KSC Fontána</div>
             </div>
             <div class="col-6 col-sm-4 col-lg-3 b-event-link">
-                <img class="d-block w-100" src="img/event-image.png" alt="" />
-                <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                <a href="#">
+                    <img class="d-block w-100" src="img/event-image.png" alt="" />
+                    <h3 class="headline headline--event">Výstava obrazov výtvarníkov klubu Bottega Art Košice</h3>
+                </a>
                 <div class="event-info">26. 9. &mdash; 15. 10. 2017</div>
                 <div class="event-info">Galéria KSC Fontána</div>
             </div>
@@ -256,10 +265,10 @@
 
         <hr />
 
-        <footer>
-            © 2017 MSKS Piešťany. Redakčný systém Cascada.
-        </footer>
     </div>
+    <footer>
+        © 2017 MSKS Piešťany. Redakčný systém <a href="#">Cascada</a>.
+    </footer>
 
     <!-- END Content -->
 

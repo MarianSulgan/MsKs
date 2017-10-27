@@ -32,6 +32,11 @@ nav[role=sub] {
         font-weight: bold;
         color: $copper;
         text-align: center;
+
+        &:hover {
+            text-decoration: underline;
+            background-color: $white;
+        }
     }
 }
 
@@ -60,17 +65,23 @@ nav[role=sub] {
 }
 
 .b-event-link {
+
+    a {
+        color: $gray-900;
+
+        &:hover {
+            color: $blue;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    }
+
     .headline--event {
         font-size: 1.2rem;
         line-height: 1.6rem;
         font-weight: bold;
         margin-top: 1rem;
-        margin-bottom: 0.6rem;
-
-        &:hover {
-            color: $blue;
-            cursor: pointer;
-        }
+        margin-bottom: 0.8rem;
     }
 
     .event-info {
@@ -82,7 +93,7 @@ nav[role=sub] {
 .b-footer-container {
     background-color: $copper;
     color: $white;
-    padding: 3rem;
+    padding: 1rem 3rem 3rem 3rem;
 
     h5 {
         font-size: 1rem;
@@ -102,19 +113,31 @@ nav[role=sub] {
 }
 
 .b-logos-container {
-    padding: 3rem;
+    padding-top: 3rem;
+
+    a {
+        display: block;
+        height: 70px;
+        max-width: 150px;
+    }
     
     img {
         max-height: 70px;
-        max-width: 150px;
+        max-width: 100%;
         margin: 0 auto;
+        padding: 0.3rem;
     }
+}
+
+.b-events-container {
+    margin-bottom: 2rem;
 }
 
 footer {
     text-align: center;
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+    padding-bottom: 0.9rem;
 }
 
 .vertical-container {
@@ -127,4 +150,77 @@ footer {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);    
+}
+
+.navbar-toggler {
+    border: none;
+    cursor: pointer;
+
+    &:focus {
+        border: none;
+        outline: none;
+    }
+}
+
+nav[role=main] .nav-link {
+    letter-spacing: .03rem;
+}
+
+.dropdown-menu-center {
+    right: auto;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.navbar-brand-name-sm {
+    display: none;
+    padding-left: 0.5rem;
+}
+
+@include media-breakpoint-down(sm) { 
+    nav[role=main] svg {
+        display: none;
+        // float: left;
+    }
+
+    .navbar-brand-name {
+        display: none;
+    }
+
+    .navbar-brand-name-sm {
+        display: block;
+        float: left;
+        white-space: normal;
+        font-weight: bold;
+        max-width: 68%;
+    }
+
+    .navbar-brand {
+        max-width: 78%;
+
+        img {
+            float: left
+        }
+    }
+
+}
+
+@media screen and (max-width: 330px) {
+    .navbar-brand-name-sm { 
+        max-width: 100%;
+        font-size: 1rem;
+    }
+    .navbar-brand {
+        max-width: 75%;
+
+        img {
+            display: none;
+        }
+    }
+}
+
+.b-footer-links {
+    h5 {
+        margin-top: 2rem;
+    }
 }
